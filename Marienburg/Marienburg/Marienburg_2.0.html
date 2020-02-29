@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2.0 - Marienburg</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="../Marienburg/index.html"><strong aria-hidden="true">1.</strong> Marienburg</a></li><li><ol class="section"><li class="expanded "><a href="../Marienburg/Marienburg_0.0.html"><strong aria-hidden="true">1.1.</strong> 0.0</a></li><li class="expanded "><a href="../Marienburg/Marienburg_0.1.html"><strong aria-hidden="true">1.2.</strong> 0.1</a></li><li class="expanded "><a href="../Marienburg/Marienburg_0.2.html"><strong aria-hidden="true">1.3.</strong> 0.2</a></li><li class="expanded "><a href="../Marienburg/Marienburg_1.0.html"><strong aria-hidden="true">1.4.</strong> 1.0</a></li><li class="expanded "><a href="../Marienburg/Marienburg_1.1.html"><strong aria-hidden="true">1.5.</strong> 1.1</a></li><li class="expanded "><a href="../Marienburg/Marienburg_1.2.html"><strong aria-hidden="true">1.6.</strong> 1.2</a></li><li class="expanded "><a href="../Marienburg/Marienburg_1.3.html"><strong aria-hidden="true">1.7.</strong> 1.3</a></li><li class="expanded "><a href="../Marienburg/Marienburg_1.4.html"><strong aria-hidden="true">1.8.</strong> 1.4</a></li><li class="expanded "><a href="../Marienburg/Marienburg_1.5.html"><strong aria-hidden="true">1.9.</strong> 1.5</a></li><li class="expanded "><a href="../Marienburg/Marienburg_2.0.html" class="active"><strong aria-hidden="true">1.10.</strong> 2.0</a></li><li class="expanded "><a href="../Marienburg/Marienburg_2.1.html"><strong aria-hidden="true">1.11.</strong> 2.1</a></li><li class="expanded "><a href="../Marienburg/Marienburg_2.2.0.html"><strong aria-hidden="true">1.12.</strong> 2.2.0</a></li><li class="expanded "><a href="../Marienburg/Marienburg_2.2.1.html"><strong aria-hidden="true">1.13.</strong> 2.2.1</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Marienburg</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>+++
+title=&quot;Marienburg 2.0 Das Lorencegebäude&quot;
++++</p>
+<p>太阳将要落下的时候，大地和天空被西边的橙红色与东边的灰蓝色分成两个世界。在有些文化中，这种时刻会被认为是不详的。他们会认为潜藏在世界中，却又不为所知的生物会出现在人世进行活动。<br />
+但是在这被阴云笼罩的玛丽恩堡市，即使在黄昏时刻，也看不见任何世界被两个颜色分隔的景象。站在劳伦斯大道88号对面银行大楼楼顶的施瓦茨和威瑟，只能看见天色稍微暗了点。威瑟穿着她的校服，校服的裙摆在高楼间的微风下微微摆动，就像刚刚下课归来一样。施瓦茨背着她的黑色背包，背包侧面插着一只小铁锤。<br />
+劳伦斯大道就是以施瓦茨她们对面这栋玻璃的现代主义大厦，劳伦斯大厦命名的。在建筑的立面，建筑师们精巧地设计了每个深黑色铁条分割窗户的比例，而这在施瓦茨看来稍微有点在影片里看到的鸽子笼楼的感觉，虽然她搞不懂为啥上千年的建筑史就进化出来这样的看不出美感的东西来，为此她只能感叹，当一切事物进入了专业领域，其中的美妙就真的不足与外人道也了。<br />
+她在心中稍微原谅了点Dr.海伦娜。<br />
+“威瑟觉得劳伦斯大厦好看吗？”<br />
+威瑟不置可否地轻轻点点头。<br />
+“这栋大楼建成的时候，曾经对外宣称，这是全国第一个城市农场，使用LED进行光照，无土栽培。”施瓦茨捏着下巴有些生气地说到：“看来这是为了他们高耗电做的掩护。”<br />
+威瑟突然插嘴到：“你还有什么想说的吗？”<br />
+“有…有啊，”施瓦茨一边抖腿，一边发表着她的临战演讲：“在工程领域，标准化是多么伟大的工作啊。哪怕是这样手眼通天的邪恶组织，也需要站在远古大神们的肩膀上工作。他们没有办法用手工的方法重新制造从中央处理器到内存的部件，他们的系统也是基于远古大神们的，他们没有办法重新写出一个经历了这么多年发展的稳定而安全的系统。他们没有办法重新另起炉灶地建立一个世界。我…”<br />
+威瑟用一个简洁，直白的动作：把施瓦茨拦腰抱起，打断了她不知道还要持续到什么时候的她听不懂的啰嗦话。<br />
+接着纵身一跃而起。<br />
+“我还没准备好啊啊啊啊啊啊啊啊…”</p>
+<p>劳伦斯大厦楼顶上违章搭建了一个停机坪，就像是把一个发射台用直升机吊运，放在了楼顶上一样。白色线画成的圆圈中间涂着一个黄色的H，停机坪侧面放着个小梯子，连接着停机坪和房顶。<br />
+威瑟超越人类一般的跳跃能力，把她们送到了停机坪的上面，她稍微侧侧头，似乎在听风的声音。<br />
+“楼顶没有人。”她这么说。<br />
+施瓦茨小心地点点头。<br />
+她们压着身子，走下了楼梯，绕过停机坪，走到一个银色铁门前。<br />
+门上只有个锁孔。<br />
+威瑟抬起大腿，屈膝，向后蓄力，然后用力踢出。<br />
+及膝裙校服的裙角微微掀起，保护住了少女的羞耻心。<br />
+施瓦茨站在一边，听见了一声咣当的巨大声音。<br />
+铁门嘎吱地，慢慢从门框倒下。</p>
+<p>威瑟雷达的探测范围似乎比施瓦茨想象的大。<br />
+她一马当先走进了向下的楼梯。<br />
+楼梯间内没有光源，在一片黑暗中，施瓦茨才发现，这楼梯只与顶层相连接。<br />
+楼梯尽头是一面玻璃墙，墙上的缝隙说明了这里有个玻璃门玻璃门，门旁边的墙上装着一个密码锁。<br />
+“或许我们从顶楼进来是瞎猫碰上死耗子，歪打正着了。”施瓦茨小声嘀咕：“可能这才是进入大楼的正确方法。从一楼的楼梯间和电梯，只能去到被隔开的其他区域。”<br />
+威瑟没有说话，她迈开双腿走到，她随手掏出玛丽，用力戳到玻璃墙上。玛丽尖没有戳穿，玻璃墙上以尖为中心，嘎查嘎查地被砸出了一片密密麻麻的蛛网一样的白色裂纹。<br />
+威瑟没有露出什么表情，她专注地收回玛丽，再用力一戳。并没有传出施瓦茨生命的经验中所熟知的，玻璃破碎时的清脆响声。玛丽突破了玻璃的防御，却也只就此再玻璃上留下了一个小小的洞。蛛网一样扩散的裂纹还老老实实维持着整面墙的形状。<br />
+威瑟把玛丽往地上一插，飞起一脚。<br />
+玻璃门的裂缝就如同被胶水黏住一样，死死地维持着它们的整体，可还是没能承受住威瑟的怪力，咔哧地被从整个门框上扯开。</p>
+<p>走进门。<br />
+威瑟看见了一条环形走廊，走廊外圈与外墙相连。可以看见建筑外面的景色。接着她转身，将目光投向了内层。<br />
+“这是…”<br />
+施瓦茨从没真正的去过大规模服务器的机房，但是她知道，那些闷热，狭小，充满了空调，排气扇和主机散热器嗡嗡声的房间绝不会和眼前看到的一样。</p>
+<p>在她们的下一层，一台台黑色的机器以建筑地板的中心为圆心，顺着半径整齐对称地摆在玻璃地板上，从黑色机柜和地板的缝隙里，可以看到下一层也是同样的摆设。每层机房都被上一层玻璃地板中间嵌入的白色LED照得透亮。<br />
+而最引人注目的，是一台拥有标准输入设备的电脑，它在不知道多少层透明玻璃地板之下，施瓦茨透过每层楼的中心看见了它。<br />
+这就如同在游戏里看到了一个头上有黄色小问号的角色，让施瓦茨不用思考就能明白它的含义。<br />
+“威瑟，我们走吧，那里就是目的地了。”<br />
+施瓦茨正要迈出脚步，威瑟伸手拦住了她。<br />
+砰地一声枪响，一枚铁块打进了施瓦茨脚边的地板里。<br />
+“亲爱的小姐们。”<br />
+就在这时，从她们没有注意到的顶层横梁上，传来了一个轻浮男人的声音。<br />
+“难道你们不知道，擅自闯进他人室内时，会收到12号弹的礼物吗？”<br />
+施瓦茨从来没看见威瑟露出过这么严肃的表情，她眉毛微皱，嘴唇紧紧抿在一起。足弓紧绷，双手微微握拳，施瓦茨甚至感觉她身上的气场都快让她的头发飘起来了。<br />
+“施瓦茨姐姐，你还记得背包里的小铁锤吗？”她稍微侧过脸，对施瓦茨说到。<br />
+施瓦茨点点头。<br />
+“如果遇到了打不开的门，它会帮你的。”<br />
+接着威瑟把脸转过去，正对站在她们头顶，手上拿着一杆灰色撞针枪的家伙，他正在从腰包里掏出定装弹，塞进枪屁股里。<br />
+“我一会儿就去找你。”<br />
+施瓦茨点点头，向着威瑟背对的方向，拔腿就跑。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../Marienburg/Marienburg_1.5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../Marienburg/Marienburg_2.1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../Marienburg/Marienburg_1.5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../Marienburg/Marienburg_2.1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
