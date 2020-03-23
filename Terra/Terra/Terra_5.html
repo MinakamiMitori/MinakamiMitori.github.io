@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Imprisonment,  Interrogation - Terra</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="../Terra/index.html"><strong aria-hidden="true">1.</strong> index</a></li><li class="expanded "><a href="../Terra/volume_0.html"><strong aria-hidden="true">2.</strong> Vol 0:Start</a></li><li><ol class="section"><li class="expanded "><a href="../Terra/Terra_1.html"><strong aria-hidden="true">2.1.</strong> Extraterrestrial</a></li><li class="expanded "><a href="../Terra/Terra_2.html"><strong aria-hidden="true">2.2.</strong> Terra</a></li></ol></li><li class="expanded "><a href="../Terra/volume_1.html"><strong aria-hidden="true">3.</strong> Vol 1:Weigh Anchor</a></li><li><ol class="section"><li class="expanded "><a href="../Terra/Terra_3.html"><strong aria-hidden="true">3.1.</strong> Draco</a></li><li class="expanded "><a href="../Terra/Terra_4.html"><strong aria-hidden="true">3.2.</strong> Kordona the Prophet</a></li><li class="expanded "><a href="../Terra/Terra_5.html" class="active"><strong aria-hidden="true">3.3.</strong> Imprisonment,  Interrogation</a></li><li class="expanded "><a href="../Terra/Terra_6.html"><strong aria-hidden="true">3.4.</strong> Body Check</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Terra</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>Chapter 5 
+Imprisonment, Interrogation</p>
+<p>似乎龙人也从来没想到过会有这种情况，为外来者准备一间潮湿，阴暗，幽深的地牢，而不是让他在龙焰下化作轻烟，或者为他准备一间充满了龙族特色的堆满黄金和宝石的豪华套房，敌人或客人都很好应付，而对于这种看起来弱得称不上敌人的家伙，龙们似乎也感觉到棘手，送到大陆上当奴隶卖了？恐怕“哟，你们高傲的龙人也做起这种看不上眼的下贱生意啦？”这种败坏种族声誉的谣言用不了一个星期就能传遍整个大陆，再说了看起来这么弱的家伙，能卖几个钱，看不起龙吗。还是烧了得了，伊兰妮离火刑柱又进了一步。</p>
+<p>伊兰妮被金龙少女押送进了一个石头堆成的堡垒。高高的垛墙，四个环绕主体结构，带着射击孔的塔楼。主体结构是个回字型营地，中间是空地，四面楼层有厨房，宿舍，军械库和指挥官办公室。这是龙人最后的军事组织，诺斯雇佣军在岛上的训练场，时过境迁，这支雇佣军也不再完全由龙人服役，训练地也转移到了遥远南方大陆上温暖的海边。整个楼层被废弃了数百年，但是石头屋，石头床还在。</p>
+<p>金龙少女恨恨地瞪了眼这个破坏了龙人们唯一一次能聚集起来的节日的罪魁祸首。真想挖个坑就把她埋了----至少也得让她跟耗子作伴。可惜她想起柯多娜先知的嘱咐：“把她照顾好，我有话要问她。”真是便宜这家伙了。</p>
+<p>金龙少女为伊兰妮打开了一扇木头门。从门口可以看见一张石桌。石桌后的石墙上挂着面龙与山图案的旗帜，墙上开着两个倒起来的盾形窗口，窗口下是操场。当年这堡垒还在使用的时候，指挥官们就是从这看有没有人摸鱼的吧。墙边放着一张石床，床尾是个箱子。她快步走到床边，打开箱子，扯出一条红黄格子棉被，铺在床上。</p>
+<p>“这是我的被子哦，别弄脏了。”她恶狠狠地威吓到。</p>
+<p>本以为自己会被关到地牢或者直接被绑到木头上钉死，惴惴不安的伊兰妮，看见她的监禁环境，还给她铺被子，虽然听见了句很凶的话，突然感觉这也是个面恶心善的好人。金龙小姐觉得这个黑发女人看她的眼神更奇怪了，她想起来这个人好像听不懂龙人们说话，摇摇头，指指床，走出门去，带上门。甚至伊兰妮都没听见锁门的声音。</p>
+<p>伊兰妮躺在床上，双手枕头，开始思考起自己的命运来。</p>
+<p>希望他们能善待俘虏。那个祭祀场不会很重要吧…，死亡…，特拉不会没事把我从地球绑来就是让我喂龙吧…，神这种存在能用理性预测目的么…寻思生疑虑，疑虑生困意，才起床没多久的伊兰妮，迷迷糊糊，躺在温暖软和的被子上，睡着了。</p>
+<p>“辛苦了，丽贝娅。你可以先回去了。”</p>
+<p>“这可不行，万一这入侵者伤到您…”</p>
+<p>“你觉得她有这么强吗？”</p>
+<p>“异族总有奇奇怪怪的手段。”</p>
+<p>“唉，你这孩子。那你好好守住门口，不要让人进来哦。”</p>
+<p>伊兰妮醒来时听见的第一个声音是嘎吱的关门声。</p>
+<p>“我这是上了天堂么…”她看见了天使。</p>
+<p>她说：“quid tuum nomen est？”</p>
+<p>伊兰妮茫然的歪歪头，只是觉得声音有些熟悉。</p>
+<p>她满意地点点头，就像是印证了自己的什么猜测似的。</p>
+<p>“你叫什么名字？”</p>
+<p>伊兰妮在心里听见有人这么问到。</p>
+<p>她从石床上跳了起来。</p>
+<p>“你是那条银色的龙？”她张大嘴巴，在心里说到。</p>
+<p>“我是那条龙。”柯多娜走到石桌后面的石头凳子上，坐了下来。</p>
+<p>伊兰妮颓然坐回到床上。</p>
+<p>“我叫伊兰妮。”</p>
+<p>“你可以叫我柯多娜。”</p>
+<p>“柯，多，娜。”伊兰妮轻轻地读出来，露出了笑容。这是在特拉知道的第一个名字呢，真希望不是最后一个啊。</p>
+<p>“我干了什么很坏的事吗？把龙人关押了几千年的坏东西放出去了什么的。”</p>
+<p>“是一件很坏的事啊。”柯多娜坏笑到：“你毁掉了龙人们唯一的圣地遗迹，他们正在开会讨论要不要把你扔到诺斯海喂海怪。”</p>
+<p>“既然我都要死了，你还来找我干什么。”伊兰妮面如土灰，说话的力气都没了。</p>
+<p>“因为我有几个问题想问你。”伊兰妮听到这话，眼前似乎出现了个红色楷书的危字。</p>
+<p>柯多娜挥挥手，一道银色的光幕遮住了她们两人的空间。</p>
+<p>“你不是这个世界的人吧。”柯多娜问道。</p>
+<p>伊兰妮愣了一下，然后点点头：“是的，我来自别的世界，不过为什么会做出这样的猜测？”</p>
+<p>“正由于你不是这个世界的人，所以才不知道啊。”柯多娜挺挺肚子，在她漫长的人生中，已经很久没有这样和平的跟人谈过话了，显得也很有兴致。“在特拉，我们所处的这个世界的名字，有很多来自异世界的生物。”</p>
+<p>“不过，”她话锋一转，“那都是些没有灵智的生物，比如各种元素，怪兽。”</p>
+<p>“像你这样有灵智的异世界生物，更何况还是人，我在所有的书里都没见过，而且你…”</p>
+<p>没说完的话让伊兰妮感到不妙，她感到一阵恶寒，她看见柯多娜的眼神，就像盯住了猎物的龙，不对，她就是一条龙。</p>
+<p>柯多娜缓缓从石椅上站起。</p>
+<p>一步一步地向着伊兰妮的石头床走来。</p>
+<p>她每前进一步，伊兰妮就向后缩一下，最后缩到墙角，柯多娜走到床边。</p>
+<p>伊兰妮在一米四的柯多娜的双翼下阴影里颤抖。</p>
+<p>柯多娜俯下腰，粉色的竖瞳看着伊兰妮：“那些愚蠢的龙人们怎么能没发现呢。你的特殊。”</p>
+<p>她接着嗓子动了动，吞下一口口水。</p>
+<p>“所以即使是我，也不想使用那些下作的唬诈手段----这样看来我再怎么异类，归根还是条龙。”她自嘲地笑笑，她精致的脸蛋上一闪而过复杂的情绪，“在我来的时候，他们还没得出任何结论，到底是将你送去大陆，还是扔海里喂鱼，所以你可以等待命运对你的判决，噢，那些家伙的愚蠢决定又怎么能说是命运呢。”</p>
+<p>“而我，想提出一个你无法拒绝的提案。”</p>
+<p>温润的呼吸打在伊兰妮的脸上，“我会帮助你离开这里，带着你的那艘船。”</p>
+<p>“可是，我就是在船上被你们抓住的。”</p>
+<p>“整个岛上满是准备开始狂欢的龙人，你闹出这么大动静，当然都跑过来了啊。而且那时候，你的飞空艇才刚刚脱离浮空阶段，还没开始加速。”她一脸“你傻得令我无奈的表情”</p>
+<p>柯多娜几乎快压在伊兰妮身上，甜蜜的呼吸，漂亮的脸，被隐隐龙威压迫变得紧张的空气，这一切让伊兰妮都无法思考。说好的不耍手段呢。</p>
+<p>“那么，代价呢？”伊兰妮有些颤抖的提出了最后的抵抗。“不会是把我的灵魂给你吧。”</p>
+<p>“我保证不会。你是选择等待降临到头上的命运，还是接受我提出的提议呢？”看来，陷阱在这里了。</p>
+<p>伊兰妮闭上眼，提出了最后一个问题，“我们的语言并不相同，为何你能和我这样对话？”</p>
+<p>“我不懂命运的语言，我却能听懂命运，我能看懂所有的文字，我能听懂所有的语言，我能和所有生灵交谈。”</p>
+<p>伊兰妮明白，除了接受，没有别的选项了。</p>
+<p>“我接受了。”她伸出右手。</p>
+<p>“这是我的家乡，达成一致意见时的礼仪。”</p>
+<p>两个人的手握在一起，柯多娜的手柔软而温暖，根本让人想不到像是冷血生物的龙的爪子。</p>
+<p>她看见女孩露出了真心的，阴谋得逞的笑容，她的眼角笑成月牙。</p>
+<p>“我有两个条件。”</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../Terra/Terra_4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../Terra/Terra_6.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../Terra/Terra_4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../Terra/Terra_6.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

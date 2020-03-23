@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Extraterrestrial - Terra</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="../Terra/index.html"><strong aria-hidden="true">1.</strong> index</a></li><li class="expanded "><a href="../Terra/volume_0.html"><strong aria-hidden="true">2.</strong> Vol 0:Start</a></li><li><ol class="section"><li class="expanded "><a href="../Terra/Terra_1.html" class="active"><strong aria-hidden="true">2.1.</strong> Extraterrestrial</a></li><li class="expanded "><a href="../Terra/Terra_2.html"><strong aria-hidden="true">2.2.</strong> Terra</a></li></ol></li><li class="expanded "><a href="../Terra/volume_1.html"><strong aria-hidden="true">3.</strong> Vol 1:Weigh Anchor</a></li><li><ol class="section"><li class="expanded "><a href="../Terra/Terra_3.html"><strong aria-hidden="true">3.1.</strong> Draco</a></li><li class="expanded "><a href="../Terra/Terra_4.html"><strong aria-hidden="true">3.2.</strong> Kordona the Prophet</a></li><li class="expanded "><a href="../Terra/Terra_5.html"><strong aria-hidden="true">3.3.</strong> Imprisonment,  Interrogation</a></li><li class="expanded "><a href="../Terra/Terra_6.html"><strong aria-hidden="true">3.4.</strong> Body Check</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Terra</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>Chapter 1 Extraterrestrial</p>
+<p>创伤后压力综合征（Post-traumatic stress disorder，简称PTSD，又称创伤后遗症）是指人在经历过情感、战争、交通事故等创伤事件后产生的精神疾病。其症状包括会出现不愉快的想法、感受或梦，接触相关事物时会有精神或身体上的不适和紧张，会试图避免接触、甚至是摧毁相关的事物，认知与感受的突然改变、以及应激状态频发等。<br />
+----维基百科</p>
+<p>夕阳余晖将整个走廊照得一片金黄，在远处的操场上，还有些放学了没回家,逗留在学校里运动的人影。<br />
+“...你那些的动作，我会当真啊。”穿着蓝白色条纹运动服的伊兰妮，她柔顺的漂亮黑发拢在脑后，梳成了充满了青春气息的单马尾，对着另一个同样穿着，面容模糊的女生说到，“你口中的喜欢，是这样的喜欢吗？”说着，伊兰妮，微微眯上眼睛，将自己的脸凑向她旁边的人，想去触碰她的嘴唇。<br />
+她右脸感受到了一阵风，接着是火辣的疼痛。<br />
+“原来你一直以来是这样看我的，真令人恶心。”她耳边传来了这样的话语。<br />
+她感觉自己被狠狠地推开了。<br />
+她平静地睁开眼睛，身前的人满脸通红，那是血管在燃烧，眼睛瞪得快从眼眶里弹出来，那是愤怒和恨意。<br />
+“这样，也好。”伊兰妮心里这么想着，眼睛却止不住地感觉到湿润起来。<br />
+她尽力保持着自己嗓音的平稳，微微张口说到：“对不起，我以后不会打扰你，也不会再在你的视野里出现了。再见。”<br />
+伊兰妮转身，迈开脚步。她想着，她的后背被少女抱住，感受到的柔软触感，她们并排地肚子朝地，趴在地上一起看画册时的好闻气息，互相喝交换奶茶喝，冰淇淋吃时的心跳加速，就如同看了一场电影。她不知道自己是怎么走的这段回家路，等到她再次睁开眼睛，被水模糊的视野里，她隐约能看清这是自己家所在的单元楼。<br />
+当她走进家门时，头发已经被放下，长长的黑发披散在背后，她手里紧紧捏着一个橙色的橡胶圈----那是她送给她的礼物。<br />
+伊兰妮走进玄关，左腿抵住右腿，用尽全身最后的力气把脚从棕色皮鞋里抽出来。一只脚穿着袜子，另一只脚还穿着鞋，迈出一步，她感觉自己的膝盖使不上力来，不，那是她并不想使出力气了。她从膝盖开始，稳定的站姿被破坏了一样朝着地板倒下。<br />
+噗咚一声，她面朝地板倒在地上。</p>
+<p>她做了个梦，那是个纯白色的世界，她感觉自己很轻，就像在天空飞行，又像在做布朗运动的灰尘，那里什么都没有，没有人，没有事，没有物，只有永远也不会受到伤害的自己和充满了快乐的胸膛。</p>
+<p>没有什么是永恒的，更何况美梦？<br />
+这一觉睡了半个月。</p>
+<p>她感觉自己躺在一个柔软的地方，从额头和膝盖传来隐隐的疼痛让她明白自己清醒了过来。她揉揉眼睛，是熟悉的自己卧室的天花板，身体压住了散在床上的长头发，橙色的橡胶圈就在自己眼旁，校服已经被人脱下，被换上了件草莓印花睡衣。</p>
+<p>“姐姐你醒了？”当她还在盯着身旁的头饰发呆，不知道过了多久，一个女孩开门而入。她有着和伊兰妮一模一样的小巧鼻子，比她矮三分，体型也更显得瘦小，尤其是还没有开始发育的小小胸脯，是这两人最大的区分点。漆黑的头发扎起两根小学女生的小马尾，使得她看起来比她的年龄更为幼小。大而明亮的漆黑眼珠里闪烁出早熟的光芒，在姐姐照顾妹妹的关系里，她们的身份就像刚好调转过来。当她们并肩走在街上，很难分清到底投向谁的目光会更多，但所有人都能知道，这是一对亲姐妹。<br />
+“伊丝塔。”三个音节，伊，发音正常，丝，嗓音颤抖了起来，塔，带上了哭腔。被拒绝的记忆就像在昨天，当她清醒过来，半个月前那个下午的泪水涌向心头，伊兰妮面对着自己的妹妹嚎啕大哭了起来。<br />
+伊丝塔走过来，坐在伊兰妮床边，伊兰妮弯下身子，伸出手，埋在妹妹的腿上，靠着她的腹部，抱住她的腰。泪水打湿了伊丝塔蓝色吊带连裤衣，在上面留下大片大片的黑色痕迹。伊丝塔轻轻抚摸着姐姐的头顶。<br />
+过了许久，伊兰妮的抽泣声渐渐小下来。<br />
+她松开抱住妹妹腰的手，重新坐起身子，抬起手抹了两把眼睛。<br />
+“对不起，让你担心。”伊兰妮吸了吸鼻子，带着浓重的鼻音，小声地道歉：“还把你衣服弄脏了。”<br />
+伊丝塔翘起嘴角，脸蛋上泛起两朵粉色的云：“没关系的，待会儿洗了就好，姐姐想吃点啥？”<br />
+“皮蛋瘦肉粥！”<br />
+“那得等很久哦。”<br />
+伊兰妮点点头。<br />
+伊丝塔慢慢走出房间，轻轻带上门。<br />
+伊兰妮拿起床边矮凳上的白衬衫，和长牛仔裤----伊丝塔为她准备的衣服，起床，找了个纸箱收拾起东西来。</p>
+<p>当伊丝塔带着葱花的香味打开房门时，她看见她的姐姐拿着她以前天天戴着的橡胶发圈，在她的脚下放着个纸箱子，她能看见纸箱里整齐地并排放着一本相册，一个笔记本和几本小书。<br />
+伊兰妮最后叹了口气，松开手，手上的东西跟随着重力，慢慢落在箱子上，发出噶哒的声音。<br />
+“结束。”她小声地，对着自己也搞不清到底能怎么看待的过去告别。<br />
+抬起头，向着世界上最后一个自己还能对着露出笑容的人说到：“闻起来真香，我们吃饭吧。”</p>
+<p>伊兰妮抱着盒子准备将它带到楼下烧掉，她走到家门口停住了脚步。<br />
+看着门，对门外世界无故地害怕涌向心头。<br />
+她尽力地想迈出脚步，却一步也不能再前进，这棕色的门上就如同上了一道关住伊兰妮的封印，让她只能无望地看着它，没法跨过它。<br />
+从这天起，伊兰妮再也没出过家门。<br />
+过上了为妹妹准备早饭，妹妹在昨晚为姐姐准备中午饭，她们一起享用晚餐的规律生活。</p>
+<p>伊丝塔升上了高中。<br />
+伊丝塔在伊兰妮的坚决反对下读了本市的大学，所有的反对意见都被“因为要照顾姐姐你啊，你一个人住我怎么放心。”堵住了。</p>
+<p>伊兰妮顺理成章地变成了废人。<br />
+窗帘紧闭，房屋狭小，薯片口袋和空了的可乐瓶子散落在身边。<br />
+黑眼圈，乱头发，宽松的白色T恤套在头上。<br />
+缩在皮沙发的深处，精神有些亢奋地玩着游戏。她运动着手指，不时点几下鼠标----施放技能，不时飞快地在键盘上敲打----问候队友亲人。常年蹲在暗室，她的肤色已经泛出些病态的白。<br />
+已经是深夜四点，任何人都明白再不睡觉的危险，尤其是伊兰妮这样常年熬夜的人，更应该注意强迫自己爬上床，除了她本人。<br />
+结束了一局比赛，她把鼠标移到开始匹配按钮上，准备继续文斗游戏时，感到一阵目眩，接着晕倒在键盘上。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../Terra/volume_0.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../Terra/Terra_2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../Terra/volume_0.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../Terra/Terra_2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

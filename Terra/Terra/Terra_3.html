@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Draco - Terra</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="../Terra/index.html"><strong aria-hidden="true">1.</strong> index</a></li><li class="expanded "><a href="../Terra/volume_0.html"><strong aria-hidden="true">2.</strong> Vol 0:Start</a></li><li><ol class="section"><li class="expanded "><a href="../Terra/Terra_1.html"><strong aria-hidden="true">2.1.</strong> Extraterrestrial</a></li><li class="expanded "><a href="../Terra/Terra_2.html"><strong aria-hidden="true">2.2.</strong> Terra</a></li></ol></li><li class="expanded "><a href="../Terra/volume_1.html"><strong aria-hidden="true">3.</strong> Vol 1:Weigh Anchor</a></li><li><ol class="section"><li class="expanded "><a href="../Terra/Terra_3.html" class="active"><strong aria-hidden="true">3.1.</strong> Draco</a></li><li class="expanded "><a href="../Terra/Terra_4.html"><strong aria-hidden="true">3.2.</strong> Kordona the Prophet</a></li><li class="expanded "><a href="../Terra/Terra_5.html"><strong aria-hidden="true">3.3.</strong> Imprisonment,  Interrogation</a></li><li class="expanded "><a href="../Terra/Terra_6.html"><strong aria-hidden="true">3.4.</strong> Body Check</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Terra</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>Chapter 3 Draco</p>
+<p>我很享受和你的那个晚上。<br />
+所以也希望你能享受我的祝福。<br />
+祝安。<br />
+爱你的特拉。</p>
+<p>当伊兰妮给飞空艇命名后，眼前出现了这样的话语。<br />
+捂脸。<br />
+她避而不看特拉给她的留言，转而仔细地研究起自己眼睛里的信息来。<br />
+最引人注目的是左下角被红黄绿三色勾勒出的船体模样，动力舱是黄色的，可能整备状态不是很良好，舰艏上的撞角是红色的，因为伊丝塔号根本没有任何武装，甲板，船舱和船身都是绿色的。以及一排关于伊丝塔号的信息，比如，船体旁边的一个条，显示出这艘船燃料充足，随时都能起飞。在视野最左边横排着些奇怪的字母，这些字母和立柱上的文字一个画风，后面跟着些符号。总之伊兰妮没能完全搞懂自己能看到的，关于飞船的信息。<br />
+可是，就算这样，我也不知道该怎么操作她啊。伊兰妮观察了一会儿自己能看见的信息----对于从没见识过抬头显示器、头盔显示器或者VR设备的伊兰妮来说这是十足有新意的一件事，才有点泄气地想到。</p>
+<p>思考的声音在大脑中还没落下，她的眼前就出现了文字：<br />
+《傻瓜也能学会的飞空艇操作手册》</p>
+<p>看见这行文字的伊兰妮下意识地想到，“真是神奇，还有什么别的功能么。”<br />
+伊丝塔号的操作系统完美地响应了伊兰妮的指令，她眼前就像被刷新了一下，操作手册被一张表取代：<br />
+系统设备表：<br />
+特拉神圣精密仪器制作所限定版十分准确雷达。<br />
+使用手册：<br />
+此雷达的拥有者，获得侦测的言语，并在整个特拉有效----即使她没将本设备随身携带。<br />
+此言语可以以某种拥有者能够理解的形式使得拥有者理解想理解的东西----只要她可以的话。<br />
+“莫名其妙。”这肯定也是特拉给的祝福的一部分，既然使用说明说这雷达是一个言语，那一定要说出来吧。<br />
+“侦测----我自己。”伊兰妮小声说到。</p>
+<p>姓名：伊兰妮<br />
+职业：无业游民<br />
+属性：力量大约是一只在布列塔尼的田鼠的水平，敏捷在这个世界的大多数生物看来和澳大利亚树懒差不多。精神强度几乎没有，受到惊吓和威胁就会丧失作战能力。<br />
+技能：无</p>
+<p>短短的四行字，仿佛在嘲笑伊兰妮绝赞的几年死宅生活。<br />
+同时她也完全理解了能理解的侦测信息的意思。<br />
+生动，形象，丢人。<br />
+“我还是研究下开飞船吧。”<br />
+经过了几分钟的阅读。伊兰妮已经完全搞懂了伊丝塔号的起飞流程。<br />
+检查燃料加注，完成，系统提示无异常，动力舱结构完好。<br />
+启动动力舱，螺旋桨转动了起来。<br />
+检查浮空术法阵，看不懂，跳过。<br />
+选择从玛娜池注入玛娜，在伊兰妮看不懂的那些信息里，有一个项动了一下，接着闪出红光，右边的符号并没出现变化。<br />
+选择从空气注入玛娜，警告，系统设备表没有提供玛娜标准化设备，在特拉某些玛娜贫瘠地区，或者特殊地区，从空气得到的玛娜可能对飞船产生影响，详情请参见汉娜·萨尔斯堡和科伦娜·维恩（20），一种基于自然法术学派的法术阵列原理，第1届玛娜学理论与应用会议，斯特丁，坡美拉尼亚大公国。<br />
+管它那么多，一脸不听不听和尚念经，死猪不怕开水烫样子的伊兰妮大声喊道：“给老娘飞啊啊啊啊。”<br />
+空气中浓厚的玛娜被位于船体的各种吸收器吸收，如果伊兰妮有过一些特拉的法力学常识，特别是空气中玛娜浓厚有哪些情况的章节，就一定不会像这样轻举妄动。<br />
+站在地上就看到，伊丝塔号船身和船底亮起了白色纹路。<br />
+伊兰妮站在舵盘后，随着船身一起微微颤动，接着她感觉身体一轻。<br />
+伊丝塔号慢慢地离开了地面，向着上方飞去。</p>
+<p>大地在震动，空气也变得混乱，细碎的石子从洞穴最上方掉落下来。<br />
+维持着巨大玛娜浓度的平衡被破坏，供应这一切环境的机制也就开始分崩离析。<br />
+几块巨大的石头从伊兰妮旁擦船而过。<br />
+她手忙搅乱的翻看起手册，关于紧急升空的部分写满了她看不懂的术语，她急得想躲到自己脚下的海图室里去，可又看到手册上写着不允许在升空时离开舵盘的规定，可能撰写手册的人也没想到过，有人会在它的上方发动袭击。<br />
+高高的立柱也开始发出咔哧咔哧的响声，开始从最顶上崩塌。<br />
+有几块大石头砸在甲板上，发出铛铛铛的声音，砸出了几个凹槽。伊兰妮双手紧紧握住并不能带来安全的伊丝塔号启动钥匙，闭上眼睛，小石头，小沙砾打在她的头上。每从头上传来写细微的触感，她就闷在嗓子里惊叫一声。<br />
+她开始变得麻木了，如果能像RPG游戏一样查看个人资料，在她的精神栏后面的数字一定增加了点。等到她实在忍不住，睁开眼睛向上看时，才发现，自己距离白色的天穹，只有一步之遥，它已然触手可及。</p>
+<p>就像从液面的这以后到另一头，从镜子里走出来，或者穿过了挂满皮草大衣的衣柜。<br />
+伊兰妮看到了真正外界的景色。<br />
+深灰色的厚重云朵不见阳光，空气中浓烈的盐巴，硫磺气息，这是一座火山岛，黑灰色的崚峋岩石布满大地，岩石缝里连根草都没有，远远地传来的大海的怒吼，背景板一样的山有着和大地一样的灰色色调，它就如同长在伊兰妮眼前，山顶积满了雪，平直的顶部，就像烟囱的喷口，随时准备着喷发出毁天灭地的烟云。</p>
+<p>除此之外，还有许多听到动静，带着武器前来欢迎她的热心原住民。<br />
+铺天盖地的长着翅膀的大蜥蜴。<br />
+说好的奇幻作品里，这种长翅膀的生物数量少呢，这架势就跟夏天池塘边的蚊子一样多。<br />
+这些龙用着伊兰妮听不懂的语言说着什么：<br />
+“Jul Maar！”<br />
+“Zul Fen Krii Ek!”<br />
+音波震得伊兰妮鼓膜都在疼。<br />
+她被龙吼影响，站在原地呆若木鸡，如果换成其他设定，她身上的状态栏里一定写满了各种技能鉴定-10的负面状态，“伊丝塔号，它们在说什么？”<br />
+无法识别的指令。<br />
+出师未捷身先死，常使英雄泪满襟。<br />
+“难道我这就要死了？”<br />
+正当伊兰妮感觉龙那一方的紧张程度自顾自地不断增加，恐怕有人会字面意义上的走火时，一只银色的龙，身后跟着只金色的，飞到了她甲板前部。<br />
+“破坏了祭祀场的异种族人，快投降吧。”她说出了伊兰妮听不懂，却能明白的话，就像直接对着伊兰妮理解力说一样。“稍有常识的人都能看出，用武力对抗龙人愤怒的后果。”<br />
+她的语气里对她们种族的强大带着些讽刺戏谑，丝毫没有因此而感到骄傲的情感，却确实地传递了她想表达的一切。<br />
+于是她挺起胸膛，带着地球人的骄傲，和伟大的契丹民族永不屈服的精神大声说到：“别打，我投降。”</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../Terra/volume_1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../Terra/Terra_4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../Terra/volume_1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../Terra/Terra_4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
